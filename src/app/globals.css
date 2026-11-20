@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-red: #E31B2B;
+  --primary-dark: #101828;
+}
+
+body {
+  color: #101828;
+  background-color: #FFFFFF;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom dashed border for coupon boxes */
+.coupon-dash {
+  background-image: repeating-linear-gradient(0deg, #E31B2B, #E31B2B 8px, transparent 8px, transparent 14px), repeating-linear-gradient(90deg, #E31B2B, #E31B2B 8px, transparent 8px, transparent 14px), repeating-linear-gradient(180deg, #E31B2B, #E31B2B 8px, transparent 8px, transparent 14px), repeating-linear-gradient(270deg, #E31B2B, #E31B2B 8px, transparent 8px, transparent 14px);
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CBD5E1;
+}
