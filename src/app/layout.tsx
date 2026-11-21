@@ -66,6 +66,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: 'AF8Vz2yYPt83bGG4xAszxVRnKMN51US-SW73BwNYxjc',
+  },
 };
 
 export default function RootLayout({
@@ -98,6 +101,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="google-site-verification" content="AF8Vz2yYPt83bGG4xAszxVRnKMN51US-SW73BwNYxjc" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <script
           type="application/ld+json"
